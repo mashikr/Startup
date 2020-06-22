@@ -1,0 +1,589 @@
+@font-face{
+    font-family: raleway-black;
+    src: url(../fonts/Raleway-Black.eot) format("eot");
+    src: url(../fonts/Raleway-Black.ttf) format("ttf");
+    src: url(../fonts/Raleway-Black.svg) format("svg");
+    src: url(../fonts/Raleway-Black.woff) format("woff");
+}
+@font-face{
+    font-family: raleway-bold;
+    src: url(../fonts/Raleway-Bold.eot) format("eot");
+    src: url(../fonts/Raleway-Bold.ttf) format("ttf");
+    src: url(../fonts/Raleway-Bold.svg) format("svg");
+    src: url(../fonts/Raleway-Bold.woff) format("woff");
+}
+@font-face{
+    font-family: raleway-exbold;
+    src: url(../fonts/Raleway-ExtraBold.eot) format("eot");
+    src: url(../fonts/Raleway-ExtraBold.ttf) format("ttf");
+    src: url(../fonts/Raleway-ExtraBold.svg) format("svg");
+    src: url(../fonts/Raleway-ExtraBold.woff) format("woff");
+}
+@font-face{
+    font-family: raleway-medium;
+    src: url(../fonts/Raleway-Medium.eot) format("eot");
+    src: url(../fonts/Raleway-Medium.ttf) format("ttf");
+    src: url(../fonts/Raleway-Medium.svg) format("svg");
+    src: url(../fonts/Raleway-Medium.woff) format("woff");
+}
+@font-face{
+    font-family: raleway-regular;
+    src: url(../fonts/Raleway-Regular.eot) format("eot");
+    src: url(../fonts/Raleway-Regular.ttf) format("ttf");
+    src: url(../fonts/Raleway-Regular.svg) format("svg");
+    src: url(../fonts/Raleway-Regular.woff) format("woff");
+}
+@font-face{
+    font-family: raleway-semibold;
+    src: url(../fonts/Raleway-SemiBold.eot) format("eot");
+    src: url(../fonts/Raleway-SemiBold.ttf) format("ttf");
+    src: url(../fonts/Raleway-SemiBold.svg) format("svg");
+    src: url(../fonts/Raleway-SemiBold.woff) format("woff");
+}
+@font-face{
+    font-family: raleway-thin;
+    src: url(../fonts/Raleway-Thin.eot) format("eot");
+    src: url(../fonts/Raleway-Thin.ttf) format("ttf");
+    src: url(../fonts/Raleway-Thin.svg) format("svg");
+    src: url(../fonts/Raleway-Thin.woff) format("woff");
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    font-family: raleway-bold;
+    max-height: 750px;
+    background-image: linear-gradient(rgba(138,138,138,.9),rgba(138,138,138,.9)),
+                      url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header span{
+    font-family: raleway-regular;
+}
+#header h1{
+    letter-spacing: .3rem;
+    font-size: 3rem;
+}
+#header span{
+    font-size: .96rem;
+}
+
+/* two white line */
+.line{
+    width: 100%;
+    height: .5rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+/* three square icon start */
+.square{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.item-1,.item-2,.item-3{
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+.item-1{
+    height: .9rem;
+    width: .9rem;
+    background-color: #00A99D;
+    z-index: 10;
+    margin-right: -5px;
+}
+.item-2{
+    height: .7rem;
+    width: .7rem;
+    background-color: #4AC1B8;
+    z-index: 5;
+    margin-right: -2px;
+}
+.item-3{
+    height: .5rem;
+    width: .5rem;
+    background-color: #95D9D4;
+}
+
+/* three square icon end */
+
+/* GRADIENT LINE */
+.grad-right,.grad-left{
+    display: flex;
+    align-items: center;
+    height: .5rem;
+    width: 100%;
+    display: inline-block;
+    padding: 1px 0;
+    margin-bottom: 1px;
+}
+.grad-right{ background-image: linear-gradient(to right, rgb(222,222,222),rgb(249,249,249)); }
+.grad-left{ background-image: linear-gradient(to left, rgb(222,222,222),rgb(249,249,249)); }
+.grad-in{
+    height: 100%;
+    background: #fff;
+}
+#nav-section{
+    font-family: raleway-medium;
+}
+#nav-section h4{
+    font-family: raleway-exbold;
+}
+#nav-section h6{
+    font-family: raleway-exbold;
+}
+#nav-section .icon{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav-border{
+    border-bottom: 2px solid rgb(222,222,222);
+}
+.navbar-brand{
+    font-family: raleway-bold;
+}
+.navbar-nav .nav-link{
+    font-family: raleway-medium;
+}
+.navbar-brand img{
+    height: 1.7rem;
+}
+.navbar-nav .nav-item{
+    border-radius: 3px;
+    padding: 0 .32rem;
+    transition: all .5s;
+}
+.navbar-nav .nav-item:hover{
+    background-color: #17A2B8;
+}
+.navbar-nav .nav-item:hover .nav-link{
+    color: #fff;
+}
+.custom-hover button{
+    cursor: pointer;
+}
+#feature{
+    font-family: raleway-medium;
+}
+#feature h4{
+    font-family: raleway-exbold;
+}
+#feature h6{
+    font-family: raleway-exbold;
+}
+.rotate-icon{
+    height: 2rem;
+    width: 2rem;
+    background-color: #17A2B8;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    position: relative;
+    margin: 0 auto;
+    top: -4rem;
+}
+.rotate-icon i{
+    transform: rotate(-45deg);
+}
+.rotate-icon .key{
+    transform: rotate(135deg);
+}
+.custom-shape{
+    height: 4.5rem;
+    width: 2.5rem;
+    clip-path: polygon(0 0, 0 80%, 50% 100%, 100% 80%, 100% 0);
+    border-radius: .32rem;
+
+}
+.custom-shape-inner{
+    height: 3.25rem;
+    width: 100%;
+    border-radius: .32rem;
+    clip-path: polygon(0 0, 0 80%, 50% 100%, 100% 80%, 100% 0);
+}
+#feature-2nd{
+    font-family: raleway-medium;
+}
+#feature-2nd h6{
+    font-family: raleway-exbold;
+}
+#feature-2nd .text-muted{
+    font-size: .8rem;
+}
+#skill{
+    font-family: raleway-medium;
+}
+#skill h4{
+    font-family: raleway-exbold;
+}
+
+/* circular progress start */
+.percent{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.percent svg{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.percent svg circle{
+    width: 100px;
+    height: 100px;
+    fill: none;
+    stroke-width: 3;
+    stroke: #000000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+}
+.percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.percent-1 svg circle:nth-child(2){
+    stroke-dashoffset: calc(283 - (283 * 75) / 100);
+    stroke: #17A2B8;
+}
+.percent-2 svg circle:nth-child(2){
+    stroke-dashoffset: calc(283 - (283 * 92) / 100);
+    stroke: #17A2B8;
+}
+.percent-3 svg circle:nth-child(2){
+    stroke-dashoffset: calc(283 - (283 * 68) / 100);
+    stroke: #17A2B8;
+}
+.percent-4 svg circle:nth-child(2){
+    stroke-dashoffset: calc(283 - (283 * 100) / 100);
+    stroke: #17A2B8;
+}
+.percent-5 svg circle:nth-child(2){
+    stroke-dashoffset: calc(283 - (283 * 83) / 100);
+    stroke: #17A2B8;
+}
+.percent-6 svg circle:nth-child(2){
+    stroke-dashoffset: calc(283 - (283 * 50) / 100);
+    stroke: #17A2B8;
+}
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.percent .number h2{
+    font-size: 20px;
+}
+.percent .number span{
+    font-size: 15px;
+}
+/* circular progress end */
+#sample-work{
+    font-family: raleway-medium;
+}
+#sample-work h4{
+    font-family: raleway-exbold;
+}
+.work-figure{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+.work-figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(50%);
+    width: 100%;
+    height: 100%;
+    background-color: #17A2B8;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+.work-figure:hover .work-figcaption{
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+}
+.work-figcaption .clip-search{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+.work-figcaption .attach-clip{
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+}
+.work-figcaption .attach-clip i{
+    color: #17A2B8;
+    transform: rotate(45deg);
+}
+.work-figcaption .search-icon{
+    height: 2rem;
+    width: 2rem;
+    background-color: #000;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+}
+.work-figcaption .search-icon i{
+    color: #fff;
+    transform: rotate(45deg);
+}
+.work-figcaption h6{
+    font-family: raleway-bold;
+    margin-top: 1.5rem;
+}
+
+#company-fact{
+    font-family: raleway-medium;
+}
+#company-fact h4{
+    font-family: raleway-exbold;
+}
+.fact-stat{
+    width: 15rem;
+}
+.fact-stat .w-75{
+    margin: 0 auto;
+}
+.fact-stat .fact-square-div{
+    height: .5rem;
+    width: .5rem;
+    background-color: #17A2B8;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+.fact-stat span{
+    font-size: 3rem;
+}
+.fact-stat .stripe-line{
+    height: 1px;
+    background-color: #6c757d;
+}
+#purchase-contact{
+    font-family: raleway-exbold;
+    font-size: .8rem;
+}
+#purchase-contact button{
+    font-family: raleway-exbold;
+    font-size: .7rem;
+}
+#team-member{
+    font-family: raleway-medium;
+}
+#team-member h4{
+    font-family: raleway-exbold;
+}
+#team-member .card{
+    width: 16rem;
+    cursor: pointer;
+}
+#team-member .member-name{
+    display: inline-block;
+    background-color: #17A2B8;
+    width: 60%;
+    margin: 0 auto;
+    color: #fff;
+    padding: .4rem 1rem;
+    border-radius: .2rem;
+    transform: translateY(-50%);
+}
+#team-member .team-fig{
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+#team-member .team-figcaption{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #17A2B8;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#team-member .team-figcaption .icon-div{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: #fff;
+    color: #17A2B8;
+    cursor: pointer;
+    transition: all .5s;
+    transform: rotate(45deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#team-member .team-figcaption .icon-div i{
+    transform: rotate(-45deg);
+}
+#team-member .team-figcaption .icon-div:hover{
+    color: #fff;
+    background-color: #000;
+    z-index: 10;
+}
+#team-member .card:hover .team-figcaption{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+#quote{
+    font-family: raleway-medium;
+}
+#company-logo img{
+    height: 7rem;
+    opacity: .5;
+    margin: 1rem;
+}
+#company-logo img:hover{
+    opacity: 1;
+}
+#price{
+    font-family: raleway-medium;
+}
+#price h4{
+    font-family: raleway-exbold;
+}
+#price .card span{
+    position: relative;
+    margin-top: -2.5rem;
+}
+#price .card h1{
+    font-family: raleway-exbold;
+    font-size: 3rem;
+    position: relative;
+}
+#price .card h1 .black-div{
+    display: inline-block;
+    position: absolute;
+    height: .4rem;
+    width: .4rem;
+    background-color: #000;
+    bottom: .5rem;
+    right: .5rem;
+    transform: rotate(45deg);
+
+}
+#price .card small{
+    font-family: raleway-bold;
+    font-size: 1rem;
+    margin-left: .2rem;
+}
+#price-2nd{
+    font-family: raleway-exbold;
+    background-color: #6c757d;
+}
+#social-media .navbar-brand{
+    font-family: raleway-exbold;
+}
+#social-media .icons-div{
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid #6c757d;
+    border-radius: .2 rem;
+    margin: .2rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#social-media .icons-div:hover{
+    background-color: #17A2B8;
+}
+#location{
+    min-height: 200px;
+    background-image: url(../img/location.PNG);
+    font-family: raleway-medium;
+}
+#location .card{
+    max-width: 25rem;
+}
+footer{
+    font-family: raleway-medium;
+}
+
+
+
+
+
+@media only screen and (max-width:992px){
+    html{
+        font-size: 90%;
+    }
+    .nav-link{
+        font-size: .8rem;
+    }
+}
+@media only screen and (max-width:768px){
+    html{
+        font-size: 80%;
+    }
+    .navbar{
+        position: fixed;
+        background-color: rgba(23,162,184,.8);
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .navbar-brand{
+        color: #fff !important;
+    }
+    .nav-link{
+        color: #fff !important;
+    }
+    .navbar-nav .nav-item:hover{
+        background-color: #000;
+    }
+    .nav-border{
+        border-bottom: none;
+    }
+    .flex-direction{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:576px){
+    html{
+        font-size: 70%;
+    }
+}
